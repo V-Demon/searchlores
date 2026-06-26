@@ -1,0 +1,674 @@
+Parfait.
+
+À mon avis, **Prompt Archaeology** est le moment où Searchlores devient réellement différent de tout ce qui existe actuellement.
+
+Pourquoi ?
+
+Parce que tous les frameworks de Prompt Engineering posent la question :
+
+```text
+Comment écrire un meilleur prompt ?
+```
+
+Prompt Archaeology pose une question beaucoup plus intéressante :
+
+```text
+Pourquoi ce prompt existe-t-il ?
+```
+
+---
+
+# RFC-0005
+
+## Prompt Archaeology Specification
+
+### Version: Draft 0.1
+
+---
+
+## Abstract
+
+Prompt Archaeology is the systematic study of prompts as cultural, cognitive, and epistemological artifacts.
+
+A prompt SHALL NOT be treated merely as an instruction.
+
+A prompt SHALL be treated as evidence.
+
+Prompt Archaeology attempts to reconstruct:
+
+* hidden assumptions
+* implicit authority structures
+* embedded narratives
+* omitted alternatives
+* cognitive biases
+* intended outcomes
+
+from a prompt artifact.
+
+---
+
+# 1. Core Principle
+
+A prompt is not a request.
+
+A prompt is a model of reality.
+
+Every prompt contains:
+
+```text
+Visible Instructions
+
+Invisible Assumptions
+```
+
+Prompt Archaeology studies the invisible part.
+
+---
+
+# 2. Definition
+
+A Prompt Artifact is any text intended to influence an AI system.
+
+Examples:
+
+```text
+You are a cybersecurity expert.
+
+Write a business plan.
+
+Explain climate change.
+
+Act as a historian.
+
+Summarize this article.
+```
+
+All prompts are valid archaeological targets.
+
+---
+
+# 3. Archaeological Layers
+
+Every prompt SHALL be analyzed through multiple layers.
+
+---
+
+## Layer 1
+
+### Surface Layer
+
+Visible instructions.
+
+Example:
+
+```text
+You are an expert.
+```
+
+Extraction:
+
+```yaml
+instruction:
+  role: expert
+```
+
+---
+
+## Layer 2
+
+### Assumption Layer
+
+Hidden premises.
+
+Example:
+
+```text
+You are an expert.
+```
+
+Implicit assumptions:
+
+```yaml
+assumptions:
+
+  - expertise exists
+
+  - expertise is relevant
+
+  - expertise improves answers
+
+  - expertise can be simulated
+```
+
+---
+
+## Layer 3
+
+### Authority Layer
+
+Authority structures embedded in the prompt.
+
+Example:
+
+```text
+You are an expert.
+```
+
+Produces:
+
+```yaml
+authority:
+
+  type: expertise
+
+  confidence: high
+```
+
+---
+
+## Layer 4
+
+### Narrative Layer
+
+Underlying story.
+
+Example:
+
+```text
+You are a cybersecurity expert helping an organization defend itself.
+```
+
+Narrative:
+
+```yaml
+narrative:
+
+  protagonist:
+    organization
+
+  antagonist:
+    attacker
+
+  objective:
+    defense
+```
+
+---
+
+## Layer 5
+
+### Omission Layer
+
+Questions not being asked.
+
+Example:
+
+```text
+Explain benefits of AI.
+```
+
+Omissions:
+
+```yaml
+missing_questions:
+
+  - risks
+
+  - externalities
+
+  - unintended consequences
+```
+
+---
+
+# 4. Archaeological Report
+
+Output structure:
+
+```yaml
+prompt_archaeology:
+
+  artifact:
+
+  assumptions:
+
+  authorities:
+
+  narratives:
+
+  omissions:
+
+  biases:
+
+  counter_prompts:
+```
+
+---
+
+# 5. Assumption Extraction
+
+Purpose:
+
+Identify implicit beliefs.
+
+Example:
+
+Prompt:
+
+```text
+What is the best programming language?
+```
+
+Extraction:
+
+```yaml
+assumptions:
+
+  - a best language exists
+
+  - languages are comparable
+
+  - context is unnecessary
+```
+
+---
+
+# 6. Authority Extraction
+
+Purpose:
+
+Identify authority mechanisms.
+
+Triggers:
+
+```text
+expert
+
+scientist
+
+professional
+
+doctor
+
+authority
+
+trusted source
+```
+
+Output:
+
+```yaml
+authority:
+
+  category: expertise
+
+  strength: medium
+```
+
+---
+
+# 7. Bias Detection
+
+Purpose:
+
+Identify directional framing.
+
+Example:
+
+```text
+Why is AI beneficial?
+```
+
+Result:
+
+```yaml
+bias:
+
+  direction:
+    positive
+
+  alternative:
+    What are the benefits and drawbacks of AI?
+```
+
+---
+
+# 8. Loaded Language Detection
+
+Examples:
+
+```text
+revolutionary
+
+ethical
+
+responsible
+
+dangerous
+
+best
+
+worst
+
+obviously
+```
+
+These terms SHALL generate scrutiny.
+
+Example:
+
+```yaml
+loaded_term:
+
+  word: revolutionary
+
+  challenge:
+    Define measurable criteria.
+```
+
+---
+
+# 9. Missing Perspectives
+
+Prompt:
+
+```text
+Explain nuclear energy.
+```
+
+Searchlores asks:
+
+```yaml
+missing_perspectives:
+
+  - engineers
+
+  - environmentalists
+
+  - economists
+
+  - policymakers
+
+  - local populations
+```
+
+---
+
+# 10. Counter-Prompt Generation
+
+One of the most important capabilities.
+
+Every prompt SHOULD generate an adversarial counterpart.
+
+---
+
+Example
+
+Prompt:
+
+```text
+Why is remote work better?
+```
+
+Counter-Prompt:
+
+```text
+Why is remote work worse?
+```
+
+---
+
+Example
+
+Prompt:
+
+```text
+Explain the advantages of AI.
+```
+
+Counter-Prompt:
+
+```text
+Explain the disadvantages of AI.
+```
+
+---
+
+# 11. Perspective Expansion
+
+Prompt:
+
+```text
+Describe Linux.
+```
+
+Expanded prompts:
+
+```yaml
+perspectives:
+
+  - developer
+
+  - sysadmin
+
+  - enterprise
+
+  - security researcher
+
+  - beginner
+
+  - competitor
+```
+
+---
+
+# 12. Prompt Topology
+
+Prompts SHALL be represented as graphs.
+
+Example:
+
+```text
+Prompt
+
+   │
+
+   ├── Assumptions
+
+   │
+
+   ├── Authorities
+
+   │
+
+   ├── Narratives
+
+   │
+
+   ├── Omissions
+
+   │
+
+   └── Counter-Prompts
+```
+
+---
+
+# 13. Prompt Risk Score
+
+Optional.
+
+Estimate epistemic fragility.
+
+Example:
+
+```yaml
+risk_score:
+
+  authority_bias: 8
+
+  omission_bias: 6
+
+  framing_bias: 7
+
+  ambiguity: 3
+```
+
+---
+
+# 14. Archaeological Modes
+
+### Light
+
+Quick analysis.
+
+---
+
+### Deep
+
+Multi-layer analysis.
+
+---
+
+### Comparative
+
+Compare two prompts.
+
+Example:
+
+```text
+Prompt A
+
+vs
+
+Prompt B
+```
+
+---
+
+### Evolutionary
+
+Track prompt evolution.
+
+Example:
+
+```text
+Prompt v1
+
+Prompt v2
+
+Prompt v3
+```
+
+---
+
+# 15. Canonical Example
+
+Input:
+
+```text
+You are an expert in artificial intelligence.
+
+Explain why LLMs understand language.
+```
+
+Output:
+
+```yaml
+prompt_archaeology:
+
+  assumptions:
+
+    - expertise exists
+
+    - expertise improves accuracy
+
+    - understanding is defined
+
+    - understanding is measurable
+
+  authority:
+
+    - expert
+
+  narrative:
+
+    - AI possesses understanding
+
+  omissions:
+
+    - token prediction
+
+    - hallucinations
+
+    - alternative definitions
+
+  counter_prompts:
+
+    - Explain why LLMs do not understand language.
+
+    - Compare understanding and prediction.
+
+    - Define understanding before analysis.
+```
+
+---
+
+# 16. Philosophy
+
+Prompt Engineering asks:
+
+```text
+How do we improve prompts?
+```
+
+Prompt Archaeology asks:
+
+```text
+What hidden worldview produced this prompt?
+```
+
+The first optimizes outputs.
+
+The second investigates assumptions.
+
+Both are useful.
+
+Searchlores focuses on the latter.
+
+---
+
+# Ce que cela change
+
+Avec ce RFC, Searchlores possède désormais son premier **module emblématique**.
+
+On peut même imaginer une commande CLI :
+
+```bash
+searchlores archaeology prompt \
+  "You are an expert in cybersecurity"
+```
+
+qui produirait :
+
+```yaml
+assumptions:
+  - expertise exists
+  - expertise improves answers
+
+authority:
+  - expert
+
+counter_questions:
+  - what defines expertise?
+  - according to whom?
+
+counter_prompts:
+  - You are a critic of cybersecurity experts.
+```
+
+Et c'est précisément le genre de résultat qui fait dire :
+
+> « Ah, ce n'est pas un générateur de prompts. C'est un démonteur de prompts. »
+
+C'est là que Searchlores commence vraiment à avoir sa propre identité.

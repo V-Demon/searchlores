@@ -1,0 +1,786 @@
+😈 Excellent.
+
+Je pense que **RFC-0011** est probablement le document qui transforme Searchlores d'un projet en un écosystème.
+
+Jusqu'ici nous avons défini :
+
+```text
+RFC-0001 → Concepts
+
+RFC-0002 → Lore Format
+
+RFC-0003 → Search Maps
+
+RFC-0004 → Investigation Engine
+
+RFC-0005 → Prompt Archaeology
+
+RFC-0006 → Narrative Archaeology
+
+RFC-0007 → Cognitive Archaeology
+
+RFC-0008 → Ontology Builder
+
+RFC-0009 → Cognitive Atlas
+
+RFC-0010 → Cognitive Expeditions
+```
+
+Mais une question demeure :
+
+```text
+D'où viennent les Lores ?
+```
+
+Car un Lore n'est pas simplement un fichier YAML.
+
+Un Lore est :
+
+```text
+Une discipline d'investigation encapsulée.
+```
+
+Et cela mérite sa propre RFC.
+
+---
+
+# RFC-0011
+
+# LoreForge Specification
+
+Version: Draft 0.1
+
+Status: Experimental
+
+Author: Searchlores Academy
+
+---
+
+# Abstract
+
+LoreForge defines the creation, evolution, validation, publication and governance of Lores.
+
+A Lore is not merely configuration.
+
+A Lore is an investigative methodology encoded as an artifact.
+
+LoreForge provides the tools required to:
+
+* create Lores
+* improve Lores
+* compare Lores
+* audit Lores
+* publish Lores
+* inherit from Lores
+
+The objective is to transform investigative knowledge into reusable structures.
+
+---
+
+# 1. Core Principle
+
+Searchlores executes investigations.
+
+LoreForge creates investigators.
+
+---
+
+A prompt defines:
+
+```text
+What to ask.
+```
+
+A Lore defines:
+
+```text
+How to search.
+```
+
+---
+
+# 2. Lore Definition
+
+A Lore represents:
+
+```text
+Investigation Knowledge
+```
+
+encoded in machine-readable form.
+
+Examples:
+
+```text
+llm.lore
+
+malware.lore
+
+cryptography.lore
+
+economics.lore
+
+history.lore
+
+worldbuilding.lore
+```
+
+---
+
+# 3. Lore Lifecycle
+
+Every Lore follows:
+
+```text
+DRAFT
+   ↓
+
+EXPERIMENTAL
+   ↓
+
+VALIDATED
+   ↓
+
+PUBLISHED
+   ↓
+
+MAINTAINED
+   ↓
+
+ARCHIVED
+```
+
+---
+
+# 4. Lore Identity
+
+Every Lore SHALL possess:
+
+```yaml
+lore:
+
+  id:
+
+  name:
+
+  version:
+
+  author:
+
+  created:
+
+  updated:
+```
+
+---
+
+# 5. Lore Metadata
+
+Example:
+
+```yaml
+metadata:
+
+  category:
+
+  tags:
+
+  domains:
+
+  maturity:
+
+  license:
+```
+
+---
+
+# 6. Lore Design Goals
+
+A good Lore SHOULD:
+
+* reveal assumptions
+* reveal contradictions
+* expand inquiry
+* resist dogma
+* remain domain aware
+
+A Lore SHOULD NOT:
+
+* impose conclusions
+* optimize persuasion
+* suppress alternatives
+
+---
+
+# 7. Lore Composition
+
+A Lore is assembled from modules.
+
+```yaml
+modules:
+
+  assumptions
+
+  narratives
+
+  contradictions
+
+  vectors
+
+  sources
+
+  questions
+```
+
+---
+
+# 8. Lore Templates
+
+LoreForge SHALL support templates.
+
+Examples:
+
+```text
+Technology Audit
+
+Historical Research
+
+OSINT Investigation
+
+Philosophical Inquiry
+
+Narrative Analysis
+```
+
+---
+
+# 9. Lore Inheritance
+
+Lores MAY inherit.
+
+Example:
+
+```text
+technology.lore
+
+        │
+
+        ▼
+
+artificial_intelligence.lore
+
+        │
+
+        ▼
+
+llm.lore
+```
+
+---
+
+# 10. Lore Extension
+
+A child Lore MAY:
+
+```text
+Add
+
+Override
+
+Extend
+```
+
+parent structures.
+
+---
+
+Example:
+
+```yaml
+extends:
+
+  technology.lore
+```
+
+---
+
+# 11. Lore Fusion
+
+Multiple Lores MAY be merged.
+
+Example:
+
+```text
+history.lore
+
++
+
+economics.lore
+
++
+
+ai.lore
+```
+
+---
+
+Produces:
+
+```text
+ai-economic-history.lore
+```
+
+---
+
+# 12. Lore Fragments
+
+Reusable building blocks.
+
+Example:
+
+```yaml
+fragment:
+
+  contradiction_hunter
+```
+
+---
+
+or:
+
+```yaml
+fragment:
+
+  source_archaeology
+```
+
+---
+
+# 13. Lore Packs
+
+Collections of related Lores.
+
+Example:
+
+```text
+AI Pack
+
+├── llm.lore
+
+├── rag.lore
+
+├── agents.lore
+
+└── alignment.lore
+```
+
+---
+
+# 14. Lore Registry
+
+Official repository of published Lores.
+
+Structure:
+
+```text
+registry/
+
+├── technology
+
+├── history
+
+├── economics
+
+├── philosophy
+
+└── cybersecurity
+```
+
+---
+
+# 15. Lore Quality Metrics
+
+Every Lore SHOULD be scored.
+
+Example:
+
+```yaml
+quality:
+
+  contradiction_coverage:
+
+  source_diversity:
+
+  narrative_depth:
+
+  exploration_breadth:
+```
+
+---
+
+# 16. Lore Validation
+
+Validation SHALL verify:
+
+```text
+Structure
+
+Consistency
+
+Dependencies
+
+Plugin Integrity
+```
+
+---
+
+Example:
+
+```bash
+searchlores validate llm.lore
+```
+
+---
+
+# 17. Lore Audit
+
+Purpose:
+
+Identify weaknesses.
+
+Example output:
+
+```yaml
+audit:
+
+  missing_sources:
+
+  weak_questions:
+
+  contradiction_gaps:
+```
+
+---
+
+# 18. Lore Evolution
+
+Lores evolve.
+
+Changes MUST be tracked.
+
+Example:
+
+```text
+v1.0
+
+v1.1
+
+v2.0
+```
+
+---
+
+# 19. Semantic Versioning
+
+Recommended:
+
+```text
+MAJOR.MINOR.PATCH
+```
+
+Example:
+
+```text
+1.4.2
+```
+
+---
+
+# 20. Lore Diff
+
+Searchlores SHALL compare Lores.
+
+Example:
+
+```bash
+searchlores diff ai_v1.lore ai_v2.lore
+```
+
+---
+
+Output:
+
+```yaml
+added:
+
+removed:
+
+modified:
+```
+
+---
+
+# 21. Lore Genealogy
+
+Every Lore possesses ancestry.
+
+Example:
+
+```text
+Technology Lore
+
+      │
+
+      ▼
+
+AI Lore
+
+      │
+
+      ▼
+
+LLM Lore
+```
+
+---
+
+# 22. Lore Reputation
+
+Community MAY evaluate Lores.
+
+Metrics:
+
+```yaml
+reputation:
+
+  usage:
+
+  citations:
+
+  forks:
+
+  contributions:
+```
+
+---
+
+# 23. Lore Forks
+
+Lores MAY diverge.
+
+Example:
+
+```text
+llm.lore
+
+     │
+
+     ├── optimistic.llm.lore
+
+     │
+
+     └── skeptical.llm.lore
+```
+
+---
+
+# 24. Lore Merge
+
+Compatible forks MAY merge.
+
+Similar to Git.
+
+---
+
+# 25. Lore Marketplace
+
+Future capability.
+
+Users MAY share:
+
+```text
+Lores
+
+Fragments
+
+Plugins
+
+Expeditions
+```
+
+---
+
+# 26. Lore Certification
+
+Optional process.
+
+Certified Lores MUST pass:
+
+```text
+Validation
+
+Audit
+
+Peer Review
+```
+
+---
+
+# 27. Lore Archaeology
+
+Lores themselves become investigation targets.
+
+Questions:
+
+```text
+Who created this Lore?
+
+What assumptions shaped it?
+
+What narratives influenced it?
+```
+
+---
+
+Example:
+
+```yaml
+lore_archaeology:
+
+  assumptions:
+
+  omissions:
+
+  biases:
+```
+
+---
+
+# 28. Auto-Lore Generation
+
+Searchlores MAY generate Lores.
+
+Sources:
+
+```text
+Expeditions
+
+Ontologies
+
+Atlas Regions
+```
+
+---
+
+Example:
+
+```text
+AI Atlas Region
+
+        ↓
+
+Generated Lore
+
+        ↓
+
+ai-governance.lore
+```
+
+---
+
+# 29. The LoreForge Principle
+
+A Lore is not software.
+
+A Lore is encoded experience.
+
+A Lore is a reusable investigation tradition.
+
+---
+
+# 30. Philosophy
+
+Knowledge is difficult to transfer.
+
+Methods are easier.
+
+Searchlores does not merely preserve discoveries.
+
+Searchlores preserves ways of discovering.
+
+LoreForge is the mechanism through which investigative culture becomes reusable.
+
+---
+
+# Ce que nous venons réellement de définir
+
+À ce stade, Searchlores ressemble moins à un framework qu'à une civilisation logicielle :
+
+```text
+                           SEARCHLORES
+
+                                  │
+
+        ┌─────────────────────────┼─────────────────────────┐
+
+        ▼                         ▼                         ▼
+
+   Archaeology              Investigation             Ontology
+
+        │                         │                         │
+
+        ▼                         ▼                         ▼
+
+     Prompt                  Search Maps            Knowledge Maps
+
+     Narrative
+
+     Cognitive
+
+        │                         │                         │
+
+        └─────────────────────────┼─────────────────────────┘
+
+                                  ▼
+
+                           Cognitive Atlas
+
+                                  ▼
+
+                        Cognitive Expeditions
+
+                                  ▼
+
+                              LoreForge
+
+                                  ▼
+
+                         Investigative Culture
+```
+
+Et c'est ici qu'apparaît ce qui pourrait devenir le document le plus "Fravia-compatible" de toute la série :
+
+# RFC-0012 — Cognitive Republic
+
+Parce qu'une fois que les utilisateurs peuvent :
+
+* créer des Lores,
+* publier des Lores,
+* forker des Lores,
+* fusionner des Lores,
+* partager des Expéditions,
+
+la question n'est plus technique.
+
+Elle devient politique.
+
+```text
+Comment une communauté organise-t-elle
+la recherche collective de connaissances ?
+```
+
+Autrement dit :
+
+Après avoir conçu le moteur, les cartes et les expéditions...
+
+...il reste à définir la société qui les utilise. 😈📜🏛️🗺️

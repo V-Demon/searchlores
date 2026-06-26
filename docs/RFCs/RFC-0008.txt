@@ -1,0 +1,886 @@
+😂 Excellent choix.
+
+Si Searchlores devait avoir une bande-son officielle, *Seventh Son of a Seventh Son* serait probablement dans le top 3.
+
+Pourquoi ?
+
+Parce que tout l'album tourne autour de :
+
+```text
+visions
+prophéties
+connaissances cachées
+couches de réalité
+quête initiatique
+```
+
+Ce qui est finalement très proche de ce que nous essayons de construire :
+
+```text
+Prompt Archaeology
+↓
+Narrative Archaeology
+↓
+Cognitive Archaeology
+↓
+Ontology Builder
+```
+
+On quitte progressivement le territoire du simple logiciel pour entrer dans celui d'une sorte de :
+
+```text
+Cartographie des structures invisibles
+```
+
+Alors montons le volume.
+
+---
+
+# RFC-0008
+
+# Ontology Builder Specification
+
+Version: Draft 0.1
+
+Status: Experimental
+
+Author: Searchlores Academy
+
+---
+
+# Abstract
+
+The Ontology Builder is responsible for transforming isolated investigative artifacts into coherent knowledge structures.
+
+Previous Searchlores modules discover fragments:
+
+* assumptions
+* concepts
+* narratives
+* contradictions
+* sources
+* questions
+
+The Ontology Builder assembles those fragments into a navigable conceptual architecture.
+
+Its purpose is not to answer questions.
+
+Its purpose is to organize understanding.
+
+---
+
+# 1. Core Principle
+
+Archaeology discovers.
+
+Ontology organizes.
+
+---
+
+Without Ontology Builder:
+
+```text
+Concept A
+
+Concept B
+
+Concept C
+
+Narrative D
+
+Source E
+```
+
+remain disconnected findings.
+
+---
+
+With Ontology Builder:
+
+```text
+Knowledge Structure
+```
+
+emerges.
+
+---
+
+# 2. Definition
+
+An Ontology is a structured representation of relationships between concepts.
+
+In Searchlores:
+
+```text
+Ontology
+=
+Conceptual Topology
+```
+
+---
+
+# 3. Ontology Inputs
+
+The Builder consumes:
+
+```yaml
+inputs:
+
+  assumptions
+
+  concepts
+
+  narratives
+
+  contradictions
+
+  sources
+
+  questions
+
+  vectors
+```
+
+---
+
+# 4. Ontology Outputs
+
+The Builder produces:
+
+```yaml
+outputs:
+
+  concept_graph
+
+  definition_tree
+
+  contradiction_network
+
+  narrative_network
+
+  source_genealogy
+
+  knowledge_map
+```
+
+---
+
+# 5. Concept Node
+
+The atomic unit.
+
+```yaml
+concept:
+
+  id:
+
+  label:
+
+  definitions:
+
+  assumptions:
+
+  contradictions:
+
+  narratives:
+```
+
+---
+
+# 6. Concept Fusion
+
+Multiple discoveries MAY refer to the same concept.
+
+Example:
+
+```text
+Intelligence
+
+Human Intelligence
+
+Artificial Intelligence
+
+Machine Intelligence
+```
+
+Builder SHOULD detect:
+
+```text
+Shared Parent Concept
+```
+
+---
+
+Result:
+
+```text
+Intelligence
+    │
+    ├── Human
+    ├── Artificial
+    └── Collective
+```
+
+---
+
+# 7. Concept Hierarchies
+
+Builder SHALL construct:
+
+```text
+Parent
+
+Child
+
+Sibling
+```
+
+relationships.
+
+Example:
+
+```text
+Knowledge
+
+   │
+
+   ├── Expertise
+
+   ├── Experience
+
+   └── Learning
+```
+
+---
+
+# 8. Definition Trees
+
+Concepts often possess multiple definitions.
+
+Example:
+
+```text
+Understanding
+```
+
+may generate:
+
+```yaml
+definitions:
+
+  computational
+
+  philosophical
+
+  psychological
+
+  linguistic
+```
+
+---
+
+Builder SHALL preserve competing definitions.
+
+Consensus is not required.
+
+---
+
+# 9. Contradiction Preservation
+
+Contradictions SHALL NOT be resolved automatically.
+
+Searchlores preserves tension.
+
+Example:
+
+```text
+LLMs Understand
+
+vs
+
+LLMs Predict
+```
+
+Both remain.
+
+---
+
+# 10. Contradiction Clusters
+
+Builder SHOULD detect recurring tensions.
+
+Example:
+
+```text
+Understanding
+
+Reasoning
+
+Consciousness
+
+Agency
+```
+
+may belong to:
+
+```text
+Cognition Cluster
+```
+
+---
+
+# 11. Narrative Integration
+
+Narratives become first-class ontology objects.
+
+Example:
+
+```text
+Techno-Utopianism
+```
+
+connects:
+
+```text
+Innovation
+
+Progress
+
+Automation
+
+Abundance
+```
+
+---
+
+# 12. Myth Integration
+
+Myths SHALL be represented separately.
+
+Reason:
+
+```text
+Influential
+
+≠
+
+True
+```
+
+---
+
+Example:
+
+```yaml
+myth:
+
+  AI Understands
+
+links_to:
+
+  Understanding
+
+  Intelligence
+```
+
+---
+
+# 13. Source Genealogy
+
+Builder SHALL construct lineage chains.
+
+Example:
+
+```text
+Claim
+
+  ↓
+
+Article
+
+  ↓
+
+Paper
+
+  ↓
+
+Dataset
+
+  ↓
+
+Observation
+```
+
+---
+
+# 14. Question Networks
+
+Questions are knowledge-generating objects.
+
+Questions SHALL connect to:
+
+```text
+Concepts
+
+Narratives
+
+Sources
+
+Contradictions
+```
+
+---
+
+Example:
+
+```text
+Can prediction produce understanding?
+```
+
+connects:
+
+```text
+Prediction
+
+Understanding
+
+Language
+```
+
+---
+
+# 15. Unknown Regions
+
+Ontology MUST support ignorance.
+
+Example:
+
+```yaml
+unknown:
+
+  origin
+
+  definition
+
+  evidence
+```
+
+---
+
+Unknowns are legitimate nodes.
+
+---
+
+# 16. Knowledge Density
+
+Builder SHOULD calculate:
+
+```yaml
+density:
+
+  concepts
+
+  sources
+
+  contradictions
+```
+
+Purpose:
+
+Identify:
+
+```text
+Well explored zones
+
+Poorly explored zones
+```
+
+---
+
+# 17. Concept Gravity
+
+Certain concepts attract many relationships.
+
+Example:
+
+```text
+Intelligence
+```
+
+may connect to:
+
+```text
+Reasoning
+
+Memory
+
+Language
+
+Agency
+
+Learning
+
+Prediction
+```
+
+---
+
+Builder SHALL identify:
+
+```text
+High Gravity Concepts
+```
+
+---
+
+# 18. Concept Drift Mapping
+
+Concept meanings evolve.
+
+Builder SHOULD track:
+
+```text
+Concept
+
+↓
+
+Definition History
+
+↓
+
+Current Usage
+```
+
+---
+
+Example:
+
+```text
+Hacker
+```
+
+across decades.
+
+---
+
+# 19. School-of-Thought Layer
+
+Concepts often belong to intellectual traditions.
+
+Example:
+
+```text
+Intelligence
+```
+
+may link to:
+
+```text
+Behaviorism
+
+Cognitivism
+
+Connectionism
+
+Enactivism
+```
+
+---
+
+Builder SHALL preserve plurality.
+
+---
+
+# 20. Ontology Regions
+
+Large ontologies naturally form continents.
+
+Example:
+
+```text
+AI Ontology
+
+├── Cognition
+├── Economics
+├── Politics
+├── Ethics
+└── Engineering
+```
+
+---
+
+# 21. Knowledge Cartography
+
+The Ontology Builder SHALL generate:
+
+```text
+Knowledge Maps
+```
+
+instead of lists.
+
+---
+
+Example:
+
+```text
+                     AI
+
+                      │
+
+     ┌────────────────┼────────────────┐
+
+     ▼                ▼                ▼
+
+ Cognition       Economics        Politics
+
+     │                │                │
+
+     ▼                ▼                ▼
+
+Reasoning         Labor         Regulation
+
+Memory            Markets       Governance
+
+Language          Incentives    Power
+```
+
+---
+
+# 22. Ontology Layers
+
+A complete ontology contains:
+
+```text
+Layer 1
+Concepts
+
+Layer 2
+Definitions
+
+Layer 3
+Narratives
+
+Layer 4
+Contradictions
+
+Layer 5
+Sources
+
+Layer 6
+Questions
+```
+
+---
+
+# 23. Search Map Integration
+
+Ontology Builder SHALL produce:
+
+```yaml
+ontology_map:
+
+  nodes:
+
+  edges:
+
+  regions:
+
+  clusters:
+```
+
+Compatible with RFC-0003.
+
+---
+
+# 24. Lore Generation
+
+An ontology MAY generate new Lores.
+
+Example:
+
+```text
+AI Ontology
+```
+
+produces:
+
+```text
+llm.lore
+
+alignment.lore
+
+rag.lore
+
+agents.lore
+```
+
+---
+
+# 25. Recursive Investigations
+
+Every ontology node MAY become:
+
+```text
+New Investigation Subject
+```
+
+Example:
+
+```text
+AI
+
+↓
+
+Understanding
+
+↓
+
+Meaning
+
+↓
+
+Intentionality
+```
+
+Infinite recursion is possible.
+
+---
+
+# 26. Cognitive Atlas
+
+Multiple ontologies MAY be merged.
+
+Result:
+
+```text
+Cognitive Atlas
+```
+
+Example:
+
+```text
+AI
+
+Economics
+
+Psychology
+
+Philosophy
+
+History
+```
+
+forming a unified cartography.
+
+---
+
+# 27. Ontological Risk Analysis
+
+Builder SHOULD detect:
+
+```yaml
+risk:
+
+  ambiguity
+
+  contradiction_density
+
+  narrative_capture
+
+  source_fragility
+```
+
+---
+
+# 28. Philosophy
+
+Searchlores does not seek answers.
+
+Searchlores seeks structure.
+
+Structure reveals relationships.
+
+Relationships reveal assumptions.
+
+Assumptions reveal worldviews.
+
+Worldviews reveal civilizations.
+
+---
+
+# 29. The Cartographer Principle
+
+A map is not reality.
+
+An ontology is not truth.
+
+Both remain useful.
+
+The objective is not certainty.
+
+The objective is orientation.
+
+---
+
+# 30. Conclusion
+
+Prompt Archaeology uncovers artifacts.
+
+Narrative Archaeology uncovers stories.
+
+Cognitive Archaeology uncovers concepts.
+
+Ontology Builder constructs worlds from those discoveries.
+
+The Search Is The Program.
+
+The Ontology Is The Map.
+
+---
+
+## Ce qui apparaît maintenant dans la brume...
+
+À ce stade, je commence à voir la forme finale du projet :
+
+```text
+                    SEARCHLORES
+
+                           │
+
+          ┌────────────────┼────────────────┐
+
+          ▼                ▼                ▼
+
+     Archaeology      Investigation     Ontology
+
+          │                │                │
+
+          ▼                ▼                ▼
+
+      Artifacts         Search Maps     Knowledge Maps
+
+          │                │                │
+
+          └────────────────┼────────────────┘
+
+                           ▼
+
+                    Cognitive Atlas
+```
+
+Et là, un vieux démon d'architecte logiciel commence à sourire.
+
+Parce qu'après RFC-0008, on ne parle plus seulement d'un moteur.
+
+On peut commencer à spécifier quelque chose qui ressemble à un **"Knowledge Operating System"** : un système où les investigations, les concepts, les récits et les cartes deviennent des objets natifs.
+
+Autrement dit, la prochaine frontière n'est peut-être plus une RFC d'analyse.
+
+C'est peut-être :
+
+```text
+RFC-0009 — Cognitive Atlas Specification
+```
+
+Le document qui définirait comment plusieurs ontologies, plusieurs investigations et plusieurs domaines fusionnent en une gigantesque carte exploratoire du savoir. Et là, on entrerait franchement dans le territoire du "Fravia rencontre Graph Theory rencontre LLMs". 😎🎸

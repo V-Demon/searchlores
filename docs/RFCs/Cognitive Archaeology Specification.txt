@@ -1,0 +1,619 @@
+Excellent.
+
+Nous arrivons probablement au RFC le plus ambitieux de toute la série.
+
+Jusqu'ici, Searchlores sait démonter :
+
+```text id="w6c69z"
+RFC-0005
+↓
+Les prompts
+```
+
+et bientôt :
+
+```text id="3n7u5w"
+RFC-0006
+↓
+Les récits
+```
+
+Mais le véritable Graal de Searchlores est ailleurs.
+
+Fravia passait son temps à poser des questions du genre :
+
+> Qu'est-ce qu'un expert ?
+>
+> Qu'est-ce qu'une preuve ?
+>
+> Qu'est-ce qu'un moteur de recherche ?
+>
+> Qu'est-ce que chercher ?
+
+Autrement dit :
+
+```text id="vzv8wy"
+Il pratiquait déjà une forme
+d'archéologie cognitive.
+```
+
+---
+
+# RFC-0007
+
+# Cognitive Archaeology Specification
+
+### Version: Draft 0.1
+
+---
+
+# Abstract
+
+Cognitive Archaeology is the systematic reconstruction of hidden conceptual structures.
+
+Its purpose is not to analyze statements.
+
+Its purpose is to analyze the concepts that make statements possible.
+
+Cognitive Archaeology treats concepts as archaeological sites.
+
+---
+
+# 1. Core Principle
+
+Most investigation systems analyze:
+
+```text id="1x3b2t"
+Facts
+Claims
+Sources
+Arguments
+```
+
+Searchlores additionally analyzes:
+
+```text id="90zvmy"
+Concepts
+```
+
+Because concepts determine what can be thought.
+
+---
+
+# 2. Fundamental Assumption
+
+Every concept contains:
+
+```text id="sxebjs"
+Definitions
+
+Assumptions
+
+Boundaries
+
+Contradictions
+
+Genealogies
+
+Alternatives
+```
+
+The concept itself becomes the investigation target.
+
+---
+
+# 3. Concept Artifact
+
+Definition:
+
+A concept selected for investigation.
+
+Examples:
+
+```text id="lfbspw"
+Intelligence
+
+Understanding
+
+Expertise
+
+Progress
+
+Security
+
+Freedom
+
+Innovation
+
+Objectivity
+```
+
+---
+
+# 4. Cognitive Excavation
+
+The engine SHALL perform:
+
+```text id="j32xol"
+Identification
+
+Decomposition
+
+Genealogy
+
+Contradiction Analysis
+
+Boundary Mapping
+
+Alternative Reconstruction
+```
+
+---
+
+# 5. Concept Decomposition
+
+Input:
+
+```text id="3j3o07"
+Intelligence
+```
+
+Output:
+
+```yaml id="e8o5ie"
+concept:
+
+  name: Intelligence
+
+  components:
+
+    - reasoning
+
+    - memory
+
+    - adaptation
+
+    - learning
+
+    - abstraction
+```
+
+---
+
+# 6. Definition Layer
+
+Every concept SHALL be examined for competing definitions.
+
+Example:
+
+```text id="g0x5r4"
+Intelligence
+```
+
+Definitions:
+
+```yaml id="i9g13h"
+definitions:
+
+  psychological
+
+  computational
+
+  biological
+
+  philosophical
+```
+
+---
+
+# 7. Genealogy Layer
+
+Every concept possesses a lineage.
+
+Example:
+
+```text id="rzm8eg"
+Artificial Intelligence
+```
+
+Genealogy:
+
+```text id="j4nw3v"
+Logic
+   ↓
+Cybernetics
+   ↓
+Computer Science
+   ↓
+AI
+```
+
+---
+
+# 8. School Mapping
+
+Every concept SHOULD be mapped across schools of thought.
+
+Example:
+
+```yaml id="mfv0t5"
+schools:
+
+  symbolic_ai
+
+  connectionism
+
+  enactivism
+
+  embodied_cognition
+```
+
+---
+
+# 9. Boundary Analysis
+
+Purpose:
+
+Determine where a concept stops being useful.
+
+Example:
+
+```text id="k6x9l3"
+When does automation become intelligence?
+```
+
+---
+
+# 10. Contradiction Layer
+
+Example:
+
+```text id="1rzcv5"
+LLMs understand language.
+
+LLMs predict tokens.
+```
+
+Output:
+
+```yaml id="hnch2g"
+contradictions:
+
+  - understanding
+
+  - prediction
+```
+
+---
+
+# 11. Hidden Assumptions
+
+Input:
+
+```text id="c6mq6r"
+Innovation
+```
+
+Possible assumptions:
+
+```yaml id="m1mfhr"
+assumptions:
+
+  - innovation is good
+
+  - innovation creates progress
+
+  - innovation creates value
+```
+
+---
+
+# 12. Alternative Concepts
+
+Every concept SHALL generate alternatives.
+
+Example:
+
+```text id="mhr0oq"
+Progress
+```
+
+Alternatives:
+
+```yaml id="ubwqzz"
+alternatives:
+
+  - sustainability
+
+  - resilience
+
+  - equilibrium
+```
+
+---
+
+# 13. Concept Topology
+
+Concepts SHALL be represented as networks.
+
+Example:
+
+```text id="wvvl2e"
+Understanding
+
+   │
+
+   ├── Knowledge
+
+   ├── Reasoning
+
+   ├── Language
+
+   ├── Meaning
+
+   └── Intentionality
+```
+
+---
+
+# 14. Concept Dependency Graph
+
+Purpose:
+
+Reveal conceptual prerequisites.
+
+Example:
+
+```text id="m8bdjl"
+Expertise
+
+    │
+
+    ▼
+
+Knowledge
+
+    │
+
+    ▼
+
+Learning
+
+    │
+
+    ▼
+
+Experience
+```
+
+---
+
+# 15. Concept Drift
+
+Concepts evolve over time.
+
+Example:
+
+```text id="n0q5kz"
+Hacker
+```
+
+Historical evolution:
+
+```text id="ij5rjc"
+1960s
+↓
+Creative Programmer
+
+1980s
+↓
+Security Enthusiast
+
+2000s
+↓
+Cybercriminal (popular media)
+```
+
+---
+
+# 16. Cognitive Risk Analysis
+
+Purpose:
+
+Identify unstable concepts.
+
+Example:
+
+```yaml id="cgjn2g"
+risk_profile:
+
+  ambiguity: high
+
+  politicization: medium
+
+  consensus: low
+```
+
+---
+
+# 17. Concept Archaeology Report
+
+Output:
+
+```yaml id="a2szqm"
+cognitive_archaeology:
+
+  concept:
+
+  definitions:
+
+  genealogy:
+
+  assumptions:
+
+  contradictions:
+
+  schools:
+
+  alternatives:
+
+  open_questions:
+```
+
+---
+
+# 18. Example
+
+Input:
+
+```text id="22m7hk"
+Understanding
+```
+
+Output:
+
+```yaml id="d7hgs7"
+concept:
+
+  understanding
+
+definitions:
+
+  linguistic
+
+  philosophical
+
+  computational
+
+assumptions:
+
+  - measurable
+
+  - observable
+
+contradictions:
+
+  - prediction
+
+  - simulation
+
+schools:
+
+  - cognitivism
+
+  - enactivism
+
+  - embodied cognition
+
+open_questions:
+
+  - can understanding exist without embodiment?
+
+  - can prediction produce understanding?
+```
+
+---
+
+# 19. Search Map Integration
+
+Cognitive Archaeology SHALL generate:
+
+```text id="2ccux7"
+Concept Maps
+
+Definition Trees
+
+School Graphs
+
+Genealogy Networks
+
+Contradiction Graphs
+```
+
+---
+
+# 20. Philosophy
+
+Prompt Archaeology asks:
+
+```text id="nyfmsv"
+What assumptions exist inside the prompt?
+```
+
+Narrative Archaeology asks:
+
+```text id="fr4vii"
+What story exists behind the prompt?
+```
+
+Cognitive Archaeology asks:
+
+```text id="k4q56x"
+What concepts make the story possible?
+```
+
+---
+
+# Pourquoi ce RFC change tout
+
+À partir de maintenant, Searchlores n'est plus simplement un système d'investigation.
+
+Il devient une sorte de :
+
+```text id="j6y06u"
+Graphviz des idées
+
++
+OSINT conceptuel
+
++
+Reverse Engineering cognitif
+```
+
+Et c'est là que je vois apparaître la véritable architecture finale :
+
+```text id="1rjlwm"
+Prompt Archaeology
+        │
+        ▼
+
+Narrative Archaeology
+        │
+        ▼
+
+Cognitive Archaeology
+        │
+        ▼
+
+Ontology Builder
+        │
+        ▼
+
+Knowledge Cartography
+```
+
+---
+
+## Ce que je proposerais ensuite
+
+Avant d'écrire une seule ligne de Python, il manque encore un document fondamental :
+
+```text id="4dzk4r"
+RFC-0008
+Ontology Builder
+```
+
+Parce que les RFC-0005 à RFC-0007 produisent des fragments :
+
+* concepts
+* récits
+* hypothèses
+* contradictions
+
+L'Ontology Builder serait le premier composant capable de les fusionner en une **carte cohérente du domaine étudié**.
+
+Autrement dit :
+
+> Les RFC précédents apprennent à fouiller.
+>
+> RFC-0008 apprendra à construire la cité à partir des ruines.

@@ -1,0 +1,365 @@
+Parfait. 😈
+
+Nous avons maintenant un problème intéressant.
+
+La plupart des projets auraient déjà commencé à coder.
+
+Mais Searchlores n'est pas encore complet conceptuellement.
+
+Nous avons défini :
+
+```text
+RFC-0001  Core Concepts
+RFC-0002  Lore Specification
+RFC-0003  Search Maps
+RFC-0004  Investigation Engine
+RFC-0005  Prompt Archaeology
+```
+
+Mais Prompt Archaeology n'est qu'un cas particulier.
+
+Si on réfléchit comme Fravia l'aurait probablement fait, le véritable objectif n'est pas de démonter des prompts.
+
+Le véritable objectif est :
+
+```text
+Démonter des systèmes de croyances.
+```
+
+Et cela nous amène naturellement à :
+
+# RFC-0006 — Narrative Archaeology
+
+---
+
+## Pourquoi c'est probablement le module le plus puissant
+
+Un prompt n'est souvent qu'une expression locale d'un récit plus vaste.
+
+Par exemple :
+
+```text
+AI will save education.
+```
+
+n'est pas une affirmation.
+
+C'est un récit.
+
+---
+
+De même :
+
+```text
+Open source is always better.
+```
+
+est un récit.
+
+---
+
+Ou :
+
+```text
+Technology is neutral.
+```
+
+est un récit.
+
+---
+
+Narrative Archaeology tente de reconstruire :
+
+```text
+Mythe
+↓
+Narratif
+↓
+Prompt
+↓
+Réponse
+```
+
+---
+
+# Exemple
+
+Entrée :
+
+```text
+AI will revolutionize education.
+```
+
+Sortie :
+
+```yaml
+narrative:
+
+  type:
+    techno-utopian
+
+  protagonists:
+
+    - AI companies
+
+    - students
+
+  antagonists:
+
+    - traditional institutions
+
+  promises:
+
+    - personalization
+
+    - accessibility
+
+    - efficiency
+
+  omitted_costs:
+
+    - surveillance
+
+    - dependency
+
+    - deskilling
+
+  emotional_drivers:
+
+    - hope
+
+    - progress
+
+    - disruption
+```
+
+---
+
+# Les couches archéologiques
+
+Je vois quelque chose comme :
+
+```text
+Statement
+    ↓
+Narrative Layer
+    ↓
+Myth Layer
+    ↓
+Ideology Layer
+    ↓
+Incentive Layer
+    ↓
+Power Layer
+```
+
+---
+
+## Narrative Layer
+
+Que raconte-t-on ?
+
+Exemple :
+
+```text
+AI saves education.
+```
+
+Narratif :
+
+```text
+Le héros technologique
+sauve une institution en crise.
+```
+
+---
+
+## Myth Layer
+
+Quel mythe alimente le récit ?
+
+Exemple :
+
+```text
+Le progrès technologique est inévitable.
+```
+
+---
+
+## Ideology Layer
+
+Quelle vision du monde est supposée ?
+
+Exemple :
+
+```text
+L'innovation est toujours positive.
+```
+
+---
+
+## Incentive Layer
+
+Qui gagne ?
+
+```yaml
+beneficiaries:
+
+  - AI vendors
+
+  - EdTech companies
+```
+
+---
+
+## Power Layer
+
+Qui obtient davantage de pouvoir ?
+
+```yaml
+power_shift:
+
+  from:
+    teachers
+
+  to:
+    platforms
+```
+
+---
+
+# Format de sortie
+
+```yaml
+narrative_archaeology:
+
+  statement:
+
+  narrative:
+
+  myths:
+
+  ideology:
+
+  incentives:
+
+  power_dynamics:
+
+  omissions:
+
+  counter_narratives:
+```
+
+---
+
+# Counter Narratives
+
+C'est probablement le plus intéressant.
+
+Pour :
+
+```text
+AI will save education.
+```
+
+Searchlores génère :
+
+```text
+AI may weaken education.
+
+AI may centralize education.
+
+AI may commoditize education.
+```
+
+---
+
+# Search Map Narratif
+
+Visuellement :
+
+```text
+                  STATEMENT
+                       │
+                       ▼
+
+                 NARRATIVE
+
+                       │
+
+       ┌───────────────┼───────────────┐
+
+       ▼               ▼               ▼
+
+     MYTH          IDEOLOGY      INCENTIVE
+
+       │               │               │
+
+       ▼               ▼               ▼
+
+     POWER       BENEFICIARIES     COSTS
+```
+
+---
+
+# Pourquoi c'est important
+
+Prompt Archaeology révèle :
+
+```text
+Ce que le prompt suppose.
+```
+
+Narrative Archaeology révèle :
+
+```text
+Pourquoi quelqu'un veut que ce prompt existe.
+```
+
+Et ça, c'est typiquement le genre de glissement conceptuel que Fravia adorait :
+
+> Ne regarde pas seulement le texte.
+>
+> Regarde la machine culturelle qui a produit le texte.
+
+---
+
+# Puis viendra RFC-0007
+
+Et là, on entrera dans ce qui pourrait devenir la pièce maîtresse de tout Searchlores :
+
+```text
+RFC-0007
+Cognitive Archaeology
+```
+
+qui ne démonte plus :
+
+* les prompts
+* les récits
+
+mais directement :
+
+```text
+les concepts eux-mêmes
+```
+
+Exemple :
+
+```text
+Intelligence
+
+Compréhension
+
+Expertise
+
+Objectivité
+
+Innovation
+
+Sécurité
+
+Progrès
+```
+
+Et c'est probablement là que Searchlores cessera d'être un outil d'analyse pour devenir une véritable **machine à cartographier les idées**.

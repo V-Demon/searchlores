@@ -1,0 +1,717 @@
+😈 Là, nous entrons dans ce qui aurait probablement fait sourire Fravia.
+
+Car jusqu'ici, Searchlores sait :
+
+```text
+analyser
+cartographier
+relier
+contextualiser
+```
+
+Mais Fravia ne collectionnait pas des cartes.
+
+Il organisait des expéditions.
+
+Une carte seule est morte.
+
+Une expédition est vivante.
+
+Une carte répond :
+
+> « Voilà ce qui est connu. »
+
+Une expédition demande :
+
+> « Où allons-nous ensuite ? »
+
+---
+
+# RFC-0010
+
+# Cognitive Expeditions Specification
+
+Version: Draft 0.1
+
+Status: Experimental
+
+Author: Searchlores Academy
+
+---
+
+# Abstract
+
+A Cognitive Expedition is a reproducible, shareable and evolving investigation journey.
+
+Unlike a traditional report, an Expedition records:
+
+* goals
+* discoveries
+* questions
+* failures
+* detours
+* contradictions
+* routes taken
+
+The purpose of an Expedition is not merely to preserve conclusions.
+
+The purpose is to preserve exploration itself.
+
+---
+
+# 1. Core Principle
+
+Reports preserve answers.
+
+Expeditions preserve discovery.
+
+---
+
+Traditional workflow:
+
+```text
+Question
+    ↓
+Answer
+```
+
+Searchlores workflow:
+
+```text
+Question
+    ↓
+Exploration
+    ↓
+New Questions
+    ↓
+Exploration
+    ↓
+Atlas Expansion
+```
+
+---
+
+# 2. Expedition Definition
+
+An Expedition is a structured exploration session.
+
+```yaml
+expedition:
+
+  id:
+
+  title:
+
+  investigator:
+
+  objective:
+
+  routes:
+
+  findings:
+
+  artifacts:
+
+  questions:
+```
+
+---
+
+# 3. Expedition Artifact
+
+File extension:
+
+```text
+.expedition
+```
+
+Examples:
+
+```text
+llm-understanding.expedition
+
+linux-history.expedition
+
+open-source-myths.expedition
+```
+
+---
+
+# 4. Expedition Lifecycle
+
+```text
+PLANNED
+    ↓
+ACTIVE
+    ↓
+DISCOVERING
+    ↓
+MAPPING
+    ↓
+DOCUMENTED
+    ↓
+ARCHIVED
+```
+
+---
+
+# 5. Expedition Objectives
+
+Objectives guide navigation.
+
+Example:
+
+```yaml
+objective:
+
+  investigate:
+    understanding
+
+  domain:
+    llms
+```
+
+---
+
+# 6. Expedition Route
+
+A route records movement through the Atlas.
+
+Example:
+
+```text
+LLMs
+   ↓
+Language
+   ↓
+Meaning
+   ↓
+Semiotics
+```
+
+---
+
+# 7. Route Object
+
+```yaml
+route:
+
+  start:
+
+  waypoints:
+
+  destination:
+```
+
+---
+
+# 8. Waypoints
+
+Waypoints are significant discoveries.
+
+Example:
+
+```yaml
+waypoint:
+
+  concept:
+    understanding
+
+  significance:
+    high
+```
+
+---
+
+# 9. Discovery Events
+
+Every major finding generates an event.
+
+```yaml
+event:
+
+  timestamp:
+
+  type:
+
+  description:
+```
+
+---
+
+Types:
+
+```text
+question_found
+
+contradiction_found
+
+source_found
+
+narrative_found
+
+assumption_found
+```
+
+---
+
+# 10. Contradiction Encounters
+
+Contradictions are exploration milestones.
+
+Example:
+
+```yaml
+encounter:
+
+  type:
+    contradiction
+
+  concepts:
+
+    - understanding
+
+    - prediction
+```
+
+---
+
+# 11. Dead Ends
+
+Expeditions MUST preserve failures.
+
+Example:
+
+```yaml
+dead_end:
+
+  route:
+
+  reason:
+```
+
+---
+
+Why?
+
+Because failed searches are knowledge.
+
+---
+
+# 12. Unknown Territories
+
+Explorers may enter poorly mapped regions.
+
+```yaml
+unknown_region:
+
+  confidence:
+    low
+
+  evidence:
+    sparse
+```
+
+---
+
+# 13. Expedition Journal
+
+Every expedition maintains a journal.
+
+```yaml
+journal:
+
+  entries:
+```
+
+---
+
+Example:
+
+```yaml
+entry:
+
+  timestamp:
+
+  observation:
+
+  significance:
+```
+
+---
+
+# 14. Research Questions
+
+Questions evolve.
+
+Example:
+
+Initial:
+
+```text
+Do LLMs understand language?
+```
+
+Later:
+
+```text
+What definition of understanding is being used?
+```
+
+---
+
+# 15. Question Evolution
+
+Searchlores SHALL preserve:
+
+```text
+Question Genealogy
+```
+
+Example:
+
+```text
+Can AI think?
+
+        ↓
+
+What is thinking?
+
+        ↓
+
+What is cognition?
+
+        ↓
+
+What is intelligence?
+```
+
+---
+
+# 16. Expedition Artifacts
+
+Generated outputs:
+
+```text
+Search Maps
+
+Ontology Maps
+
+Reports
+
+Prompt Archaeology Reports
+
+Narrative Archaeology Reports
+
+Cognitive Archaeology Reports
+```
+
+---
+
+# 17. Expedition Pack
+
+An Expedition Pack contains everything required to reproduce an investigation.
+
+```yaml
+pack:
+
+  expedition:
+
+  lores:
+
+  maps:
+
+  reports:
+
+  metadata:
+```
+
+---
+
+# 18. Reproducibility Principle
+
+Every expedition SHOULD be replayable.
+
+Example:
+
+```bash
+searchlores replay llm-understanding.expedition
+```
+
+---
+
+# 19. Collaborative Expeditions
+
+Multiple investigators MAY contribute.
+
+Example:
+
+```yaml
+contributors:
+
+  - researcher_a
+
+  - researcher_b
+
+  - researcher_c
+```
+
+---
+
+# 20. Expedition Branching
+
+Like Git branches.
+
+```text
+LLM Investigation
+        │
+        ├── Cognition Branch
+        │
+        ├── Economics Branch
+        │
+        └── Governance Branch
+```
+
+---
+
+# 21. Expedition Merge
+
+Branches MAY merge.
+
+Example:
+
+```text
+Economics
+      │
+
+Governance
+      │
+
+      ▼
+
+AI Regulation
+```
+
+---
+
+# 22. Expedition Fork
+
+Investigators MAY fork an expedition.
+
+Example:
+
+```text
+Original Investigation
+
+        │
+
+        ├── Skeptical Fork
+
+        │
+
+        └── Optimistic Fork
+```
+
+---
+
+# 23. Discovery Graph
+
+The expedition itself forms a graph.
+
+```text
+Question
+    ↓
+
+Source
+    ↓
+
+Contradiction
+    ↓
+
+Narrative
+    ↓
+
+Concept
+```
+
+---
+
+# 24. Cognitive Difficulty
+
+The engine MAY estimate:
+
+```yaml
+difficulty:
+
+  ambiguity:
+
+  contradiction_density:
+
+  source_complexity:
+```
+
+---
+
+# 25. Expedition Metrics
+
+```yaml
+metrics:
+
+  explored_nodes:
+
+  contradictions_found:
+
+  narratives_found:
+
+  concepts_discovered:
+
+  unresolved_questions:
+```
+
+---
+
+# 26. Atlas Integration
+
+Expeditions contribute to Atlas growth.
+
+```text
+Expedition
+      ↓
+
+Ontology
+
+      ↓
+
+Atlas
+```
+
+---
+
+# 27. Expedition Marketplace
+
+Optional future capability.
+
+Investigators MAY share:
+
+```text
+Routes
+
+Findings
+
+Maps
+
+Lores
+```
+
+---
+
+# 28. Expedition Templates
+
+Examples:
+
+```text
+Technology Audit
+
+Historical Investigation
+
+Concept Excavation
+
+Narrative Analysis
+
+Source Verification
+```
+
+---
+
+# 29. The Explorer Principle
+
+The investigator is not a consumer.
+
+The investigator is a navigator.
+
+The investigator is not given truth.
+
+The investigator is given routes.
+
+---
+
+# 30. Philosophy
+
+Searchlores does not answer questions.
+
+Searchlores teaches exploration.
+
+Every answer becomes a route.
+
+Every route becomes a map.
+
+Every map becomes an atlas.
+
+Every atlas becomes an invitation to continue searching.
+
+The expedition never truly ends.
+
+---
+
+# La vision complète apparaît enfin
+
+Si l'on recule de quelques mètres et qu'on regarde tout ce que nous avons construit, on obtient quelque chose qui ressemble à ceci :
+
+```text
+                    SEARCHLORES
+
+                           │
+
+        ┌──────────────────┼──────────────────┐
+
+        ▼                  ▼                  ▼
+
+   Archaeology       Investigation       Ontology
+
+        │                  │                  │
+
+        ▼                  ▼                  ▼
+
+     Prompt           Search Maps       Knowledge Maps
+
+     Narrative
+
+     Cognitive
+
+        │                  │                  │
+
+        └──────────────────┼──────────────────┘
+
+                           ▼
+
+                    Cognitive Atlas
+
+                           ▼
+
+                 Cognitive Expeditions
+
+                           ▼
+
+                 Collective Exploration
+```
+
+Et c'est ici qu'apparaît une idée qui, à mon sens, serait le véritable **RFC-0011** :
+
+```text
+RFC-0011
+LoreForge Specification
+```
+
+Parce que jusqu'à présent, nous avons défini comment utiliser des `.lore`.
+
+Mais nous n'avons jamais défini comment les créer, les faire évoluer, les fusionner, les auditer et les publier.
+
+Autrement dit :
+
+```text
+PromptForge créait des prompts.
+
+LoreForge créerait des disciplines d'investigation.
+```
+
+Et là, nous touchons peut-être au cœur du projet : non plus fabriquer des réponses, mais fabriquer les instruments intellectuels qui permettront aux autres de chercher. 🎸📜🗺️🔥
