@@ -1,12 +1,16 @@
 # searchlores/gui/widgets/log_viewer.py
 """Viewer de logs verbeux avec coloration syntaxique"""
 
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTextEdit, QLabel, QHBoxLayout, QPushButton
+# searchlores/gui/widgets/log_viewer.py
+from PyQt5.QtWidgets import (
+    QWidget, QVBoxLayout, QTextEdit, QLabel, QHBoxLayout, QPushButton
+)
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QTextCharFormat, QColor, QFont
+from PyQt5.QtGui import QTextCharFormat, QColor, QFont  # ← QFont ajouté
 
 
 class LogViewer(QWidget):
+    # ... reste du code inchangé
     """Viewer de logs avec coloration par niveau"""
 
     # Couleurs par niveau

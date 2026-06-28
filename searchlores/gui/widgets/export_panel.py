@@ -1,13 +1,15 @@
 # searchlores/gui/widgets/export_panel.py
 """Panel d'export avec visualisation du code Lisp"""
-
+# searchlores/gui/widgets/export_panel.py
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QTextEdit, QLabel, QPushButton, QHBoxLayout
 )
 from PyQt5.QtCore import pyqtSignal, Qt
+from PyQt5.QtGui import QFont  # ← LIGNES MANQUANTES AJOUTÉES
 
 
 class ExportPanel(QWidget):
+    # ... reste du code inchangé
     """Panel d'export avec code Lisp"""
 
     export_lisp_clicked = pyqtSignal()

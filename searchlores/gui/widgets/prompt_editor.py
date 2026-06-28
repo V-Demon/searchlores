@@ -1,8 +1,12 @@
 # searchlores/gui/widgets/prompt_editor.py
 """Éditeur de prompt avec historique"""
 
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTextEdit, QLabel, QHBoxLayout, QPushButton
+# searchlores/gui/widgets/prompt_editor.py
+from PyQt5.QtWidgets import (
+    QWidget, QVBoxLayout, QTextEdit, QLabel, QHBoxLayout, QPushButton
+)
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFont  # ← Si utilisé pour la police
 
 
 class PromptEditor(QWidget):
