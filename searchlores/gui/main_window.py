@@ -7,15 +7,18 @@ Le synthétiseur épistémologique pour bidouiller au feeling
 import sys
 from pathlib import Path
 from datetime import datetime
+
+# ─── IMPORTS PYQT5 CORRIGÉS ───
 from PyQt5.QtWidgets import (
-    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QSplitter, QTabWidget, QTextEdit, QLabel, QPushButton,
     QFileDialog, QMessageBox, QStatusBar, QMenuBar, QMenu,
     QAction, QToolBar
 )
 from PyQt5.QtCore import Qt, QTimer, pyqtSignal
-from PyQt5.QtGui import QFont, QTextCursor
+from PyQt5.QtGui import QFont, QTextCursor, QPalette, QColor
 
+# ─── IMPORTS SEARCHLORES ───
 from searchlores.gui.widgets.prompt_editor import PromptEditor
 from searchlores.gui.widgets.lore_selector import LoreSelector
 from searchlores.gui.widgets.plugin_selector import PluginSelector
