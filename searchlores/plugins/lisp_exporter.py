@@ -28,21 +28,22 @@ class LispExporter(Plugin):
         """Génère le code Lisp et l'ajoute aux findings"""
         lisp_code = self._generate_lisp_code(context)
         self.last_export = lisp_code
-
-        # Ajouter aux findings
-        context.add_finding("lisp_export", {
+    
+        # Accès direct aux attributs (compatible avec le vrai engine)
+        context.findings["lisp_export"] = {
             "code": lisp_code,
             "dialect": self.dialect,
             "timestamp": datetime.now().isoformat(),
             "lines": len(lisp_code.split("\n"))
-        })
-
+        }
+    
         # Ajouter la strate
-        context.add_layer(
-            stratum=self.stratum,
-            plugin=self.name,
-            findings={"exported": True, "lines": len(lisp_code.split("\n"))}
-        )
+        context.layers.append({
+            "stratum": self.stratum,
+            "plugin": self.name,
+            "findings": {"exported": True, "lines": len(lisp_code.split("\n"))},
+            "timestamp": datetime.now().isoformat()
+        })
 
     def _generate_lisp_code(self, context: InvestigationContext) -> str:
         """Génère le code Lisp complet"""
