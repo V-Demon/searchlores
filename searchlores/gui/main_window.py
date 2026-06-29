@@ -280,8 +280,11 @@ class SearchloresLaboratory(QMainWindow):
             )
 
         except Exception as e:
-            self._log(f"❌ Erreur lors de l'investigation: {e}", "ERROR")
-            QMessageBox.critical(self, "Erreur", f"Erreur lors de l'investigation:\n{e}")
+            import traceback
+            error_details = traceback.format_exc()
+            self._log(f"❌ Erreur: {e}", "ERROR")
+            self._log(f"\n{error_details}", "ERROR")
+            QMessageBox.critical(self, "Erreur", f"{e}\n\n{error_details}")
 
     def _update_visualizations(self):
         """Met à jour toutes les visualisations"""
